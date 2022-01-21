@@ -1,18 +1,19 @@
 # Scrapy
 A Simple Web Scrapping Script For Wuzzuf.com Using Selenium as part of the AI-Pro internship at ITI
 
+## Table of Contents  
+- [Requirements](#requirements)
+- [Scraped Data Headers and Representations](#data)
+- [Instructions](#instructions)
+- [Test Environment](#test)
+- [Disclaimer](#disclaimer)
 
-## Requirements
+## Requirements <a name="requirements"/>
 - Python 3 (Preferably newer than 3.6)
 - Selenium `pip install selenium`
 - Compatible Browser Driver
 
-
-## How to run the app
-You can simply run it through: `python3 Scrapy.py`
-
-
-## Scraped Data Headers and Representations
+## Scraped Data Headers and Representations <a name="data"/>
 
 |     Header Item     | Value Type |                  Representation                 |                                         Notes                                         |
 |:-------------------:|:----------:|:-----------------------------------------------:|:-------------------------------------------------------------------------------------:|
@@ -28,7 +29,7 @@ You can simply run it through: `python3 Scrapy.py`
 |         Link        |   String   | The link to the job posting details             |                                                                                       |
 
 
-## Instructions
+## Instructions <a name="instructions"/>
 1. Download and extract the app files: `Scrapy.py`, `__init__.py`, `scrapper_config.json`
 2. Download the respective driver for your browser's type and version. Currently only these three are implemented:
 
@@ -75,7 +76,7 @@ You can simply run it through: `python3 Scrapy.py`
         </tr>
         <tr>
             <td valign="center" align="center"><code>datetime_format</code></td>
-            <td valign="center" align="center">%d: day, %m: month, %Y: year,<br/>%H: hour, %M: minutes</td>
+            <td valign="center">%d: day, %m: month, %Y: year,<br/>%H: hour, %M: minutes</td>
             <td>You can choose any combination of these elements to customize <br/>the output datetime in the scrapped data</td>
         </tr>
         <tr>
@@ -96,12 +97,13 @@ You can simply run it through: `python3 Scrapy.py`
 9. Enter the number of pages you want to scrape
 10. Wait for the scrapped data, a CSV file will be created in `./Wuzzuf Scraped Data/` directory
 
-## Test Environment
+## Test Environment <a name="test"/>
 Tested on **Ubuntu 20.04** using:
 - Python 3.9.7
 - Firefox 96.0
 - Chrome 96.0.4664.110
 
-## Further features might be added in the future
+### Further features might be added in the future...
 
-## This script is for educational purposes only and I am not responsible for misuse.
+## Disclaimer <a name="disclaimer"/>
+This script is for educational purposes only and I am not responsible for misuse.
