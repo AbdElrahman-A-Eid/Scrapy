@@ -1,0 +1,11 @@
+{
+    "browser": "Chrome",
+    "headless": 1,
+    "datetime_format": "%d/%m/%Y %H:%M",
+    "Windows": 0,
+    "driver": {
+        "Chrome": "chromedriver",
+        "Firefox": "geckodriver",
+        "Edge": "msedgedriver"
+    }
+}
