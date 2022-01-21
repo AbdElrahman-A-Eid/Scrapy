@@ -125,7 +125,7 @@ with open(f"{scrapped_data_path}{datetime.strftime(datetime.now(), '%Y%m%d%H%M')
 
                 # Accessing the job type
                 job_types = job.find_elements(
-                    By.XPATH, './div[@class="css-y4udm8"]/div/a/span')
+                    By.XPATH, './div[@class="css-y4udm8"]/div[@class="css-1lh32fc"]/a/span')
                 job_types = [type.text for type in job_types]
 
                 # Accessing the job career level
