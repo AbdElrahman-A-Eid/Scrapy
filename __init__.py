@@ -38,6 +38,7 @@ def get_driver():
     elif config['browser'] == "Edge":
         # Configuring the Edge Driver
         from msedge.selenium_tools import EdgeOptions
+        from msedge.selenium_tools import Edge
         edge_options = EdgeOptions()
         edge_options.use_chromium = True
         if config['headless']:
@@ -45,4 +46,4 @@ def get_driver():
             edge_options.add_argument('--headless')
             edge_options.add_argument('--disable-gpu')
         # Return firefox driver invocation
-        return webdriver.Edge(executable_path=PATH, options=edge_options)
+        return Edge(executable_path=PATH, options=edge_options)
